@@ -1,0 +1,285 @@
+/* styles.css */
+
+/* ... Existing styles ... */
+
+/* Home Page Styles */
+
+  
+  /* ... Additional styles ... */
+/* styles.css */
+
+/* ... Existing styles ... */
+
+/* Home Page Styles */
+.page {
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease;
+  }
+  .heading:hover{
+    animation: fade-in 2s infinite;
+  }
+  
+  .highlight {
+    color: #f0c14b;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: slide-up 1s ease;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .project {
+    position: relative;
+    width: 300px;
+    height: 370px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    animation: scale-in 0.8s ease;
+  }
+  
+  .project-image {
+   width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project-info {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.9s ease;
+  }
+  
+  .project:hover .project-info {
+    transform: translateY(0);
+  }
+  
+  .project-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+  }
+  #proName{
+    color: #ff5500;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  
+  .add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f0c14b;
+    color: #111;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #ddb347;
+  }
+  
+  .plus-icon {
+    margin-right: 5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+  
+  .arrow-icon {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Keyframe Animations */
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scale-in {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* ... Additional styles ... */
+
+ /* Home.css */
+
+.container {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-me {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: start;
+}
+
+.title {
+  font-size: 32px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.title:hover{
+  animation: fadeIn 1s forwards;
+}
+
+.description {
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.6;
+  transform: translateY(20px);
+  animation: bounce-in 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name {
+  font-weight: bold;
+}
+
+/* Motion effects and transitions */
+.about-me {
+  transform: scale(0.9);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Shadow effect */
+.about-me {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Other creative styling */
+.container {
+  background-color: #f8f8f8;
+}
+
+.title {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.description {
+  font-family: 'Georgia', serif;
+}
+
+.name {
+  color: #0099ff;
+  text-decoration: underline;
+}
+
+.description::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #ff6600;
+  margin: 20px auto;
+}

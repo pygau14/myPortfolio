@@ -1,0 +1,112 @@
+.page {
+    padding: 20px;
+  }
+  
+  #title2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  .training-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .training-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    text-align: start;
+    box-shadow: 2px 2px rgb(237, 224, 224);
+    padding-bottom: 10px;
+  }
+  
+  .company-logo {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .training-details {
+    flex: 1;
+  }
+  
+  .company-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .training-details ul {
+    padding-left: 20px;
+  }
+  
+  .training-details ul li {
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    color: #B9B9B9;
+    margin-bottom: 10px;
+  }
+  
+  .training-details ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Hover Effects */
+  
+  .company-logo:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .company-name:hover {
+    color: #ff5500;
+    cursor: pointer;
+  }
+  
+  .training-details ul li:hover {
+    color: #777;
+    cursor: pointer;
+  }
+  
+  /* Motion Effects */
+  
+  .training-item {
+    transition: transform 0.3s ease;
+  }
+  
+  .training-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Color and Background */
+  
+  .page {
+    background-color: #f8f8f8;
+  }
+  
+  .company-name {
+    color: #ff5500;
+  }
+  
+  .training-details ul li {
+    color: #333;
+  }
+  
+  

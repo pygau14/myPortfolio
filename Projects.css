@@ -1,0 +1,128 @@
+.page {
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .projects-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .project-item {
+    width: 48%;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 40px;
+  }
+  
+  .logo-image {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .project-details {
+    flex: 1;
+    text-align: start;
+  }
+  
+  .project-name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    color: #333;
+    
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    color: #333;
+    text-decoration: none;
+    
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  
+  .link-icon {
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  
+  .description-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  #techStack{
+    margin-bottom: 10px;
+  }
+  
+  .description-list li {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Hover Effects */
+  
+  .project-item:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project-item:hover .project-name {
+    color: #ff5500;
+  }
+  
+  .project-item:hover .description-list li {
+    color: #777;
+  }
+  #description , #problem{
+    margin-left: -220px;
+    padding-bottom: 10px;
+    padding-right: 4px;
+  }
